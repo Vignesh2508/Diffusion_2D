@@ -1,4 +1,5 @@
-//  2-D Diffusion equation solved in Finite Volume method
+//  2-D steady state heat conduction solved in Finite Volume method
+// Author: Vignesh. R, CFD Engineer
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -68,6 +69,7 @@ int main(void)
     }
 
     //West Boundary cell
+    //Dirichlet BC
     for (i=1;i<2;i++)
     {
         for (j=2;j<grid;j++)
